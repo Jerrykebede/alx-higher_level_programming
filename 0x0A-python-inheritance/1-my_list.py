@@ -1,9 +1,15 @@
 #!/usr/bin/python3
-"""MyList module"""
+"""
+module for my lists (inherits form list)
+"""
 
 
 class MyList(list):
-    """MyList class - Inherits from list"""
+    """
+    elements of the list int type
+    return my list and sorted list
+    """
     def print_sorted(self):
-        """Prints a sorted list"""
+        # sorted method
+        # sorted(iterable[, key][, reverse])
         print(sorted(self))
