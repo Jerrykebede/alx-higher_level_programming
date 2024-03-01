@@ -35,7 +35,7 @@ def matrix_mul(m_z, m_b):
             m_a_notrect = True
         for num in row:
             if not isinstance(num, (int, float)):
-                m_a_notum = True
+                m_a_notnum = True
 
     for row in m_b:
         if not isinstance(row, list):
@@ -49,7 +49,7 @@ def matrix_mul(m_z, m_b):
     if len(m_a) == 0 or (len(m_a) == 1 and len(m_a[0]) == 0):
         raise ValueError("m_a can't be empty")
 
-    if len(m_a) == 0 or (len(m_b) == 1 and len(m_b[0]) == 0):
+    if len(m_b) == 0 or (len(m_b) == 1 and len(m_b[0]) == 0):
         raise ValueError("m_b can't be empty")
 
     if m_a_notnum:
