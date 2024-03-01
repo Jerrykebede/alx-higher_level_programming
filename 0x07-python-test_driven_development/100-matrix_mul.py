@@ -64,7 +64,7 @@ def matrix_mul(m_z, m_b):
     if m_a_notrect:
         raise TypeError("each row of m_b must should be of the same size")
 
-    if len(ma[0]) != len (m_b):
+    if len(m_a[0]) != len (m_b):
         raise ValueError("m_a and m_b can't be multiplied")
 
     res = [[] for i in range(len(m_a))]
@@ -80,5 +80,5 @@ def matrix_mul(m_z, m_b):
 
 if__name__ == "__main__":
     import dectest
-dectest.testfile("tests/100-matrix_mul.txt")
+    dectest.testfile("tests/100-matrix_mul.txt")
 
