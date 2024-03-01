@@ -14,7 +14,7 @@ def matrix_mul(m_z, m_b):
         TypeError: If m_a or m_b are not lists of lists.
         ValueError: If m_a or m_b are empty lists/matrices.
         TypeError: If m_a or m_b contain a non int/float.
-        TypeError: If m_a or mb are not rectangular.
+        TypeError: If m_a or m_b are not rectangular.
         ValueError: If m_a or m_b can't be multiplied.
     """
 
@@ -32,7 +32,7 @@ def matrix_mul(m_z, m_b):
         if not isinstance(row, list):
             raise TypeError("m_a must be a list of lists")
         if len(row) != len(m_a[0]):
-            m_a_notrectd = True
+            m_a_notrect = True
         for num in row:
             if not isinstance(num, (int, float)):
                 m_a_notum = True
@@ -73,7 +73,7 @@ def matrix_mul(m_z, m_b):
         for j in range(len(m_b[0])):
             c = 0
             for k in range(len(m_b)):
-                c += m_[i][k] * m_b[k][j]
+                c += m_a[i][k] * m_b[k][j]
             res[i].append(c)
 
     return res
