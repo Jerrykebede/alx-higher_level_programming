@@ -1,10 +1,12 @@
 #!/usr/bin/python3
-"""4-inherits_from.py
-"""
+''' module: 4-inherits_from
+'''
 
 
 def inherits_from(obj, a_class):
-    """ Check for direct or indirect inheritance """
-    if (type(obj) != a_class):
-        return isinstance(obj, a_class)
-    return False
+    '''the object is an instance of a class inherited (directly or indirectly)
+    obj: an object
+    a_class: a class
+    returns None
+    '''
+    return type(obj) != a_class and isinstance(obj, a_class)
