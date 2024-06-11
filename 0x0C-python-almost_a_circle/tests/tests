@@ -1,0 +1,24 @@
+# tests/test_rectangle.py
+
+import unittest
+from models.rectangle import Rectangle
+
+
+class TestRectangle(unittest.TestCase):
+
+    def test_init(self):
+        # Write your test cases for initialization here
+        pass
+
+    def test_area(self):
+        # Write your test cases for area calculation here
+        pass
+
+    def test_display(self):
+        # Write your test cases for display method here
+        pass
+
+    # Add more test methods for other functionalities
+
+if __name__ == "__main__":
+    unittest.main()
