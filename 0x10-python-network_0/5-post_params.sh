@@ -1,3 +1,3 @@
 #!/bin/bash
-# Displays the body of the response of a curl POST request
-curl -sX POST -d "email=eyerusalem_ke@yahoo.com" -d "subject=I will always be here for PLD" "$1"
+# Bash scripts that sends a POST request to a given URL.
+curl -s -X POST -d "email=eyerusalem_ke@yahoo.com&subject=I will always be here for PLD" "$1"
